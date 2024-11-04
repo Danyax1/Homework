@@ -14,11 +14,12 @@ class FactorialCalc:
         return FactorialCalc.cache[self]
 
 
-while True:
-    try:
-        user_int = int(input("Enter a number: "))
-    except ValueError:
-        print("Invalid input")
-        break
-    else:
-        print(FactorialCalc.factorial(user_int))
+if __name__ == '__main__':
+    while True:
+        try:
+            user_int = int(input("Enter a number: "))
+        except ValueError:
+            print("Invalid input")
+            break
+        else:
+            print(FactorialCalc.factorial(user_int))
